@@ -1,5 +1,5 @@
 import React from "react";
-import "./pageHeader.css";
+import "./PageHeader.css";
 
 const PageHeader = ({ page }) => {
   return (
