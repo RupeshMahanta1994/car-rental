@@ -1,0 +1,11 @@
+.footer__Container {
+    box-shadow: -5px 0px 65px -3px rgba(0, 0, 0, 0.1);
+}
+h2{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+input::placeholder{
+    color: rgba(0, 0, 0,0.6);
+}
