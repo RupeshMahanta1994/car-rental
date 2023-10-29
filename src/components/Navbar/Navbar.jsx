@@ -27,15 +27,6 @@ const Navbar = () => {
         {/*Logo */}
         {/*Navlinks */}
         <div className="hidden lg:flex space-x-6 text-black text-lg  capitalize">
-          <a href="/" className="navlinks">
-            Home
-          </a>
-          <a href="/about" className="navlinks">
-            About
-          </a>
-          <a href="/contact" className="navlinks">
-            Contact
-          </a>
           {navLinks.map((item) => (
             <a className="navlinks" href={item.link} key={item.title}>
               {item.title}
