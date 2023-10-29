@@ -4,8 +4,10 @@ import PageHeader from "../../components/PageHeader/PageHeader";
 import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { CiLocationArrow1 } from "react-icons/ci";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <PageHeader page="contact" />
@@ -74,7 +76,10 @@ const Contact = () => {
           >
             Write Here...
           </textarea>
-          <button className=" flex items-center justify-center text-white bg-[var(--main-color-bg)] py-3 space-x-3">
+          <button
+            className=" flex items-center justify-center text-white bg-[var(--main-color-bg)] py-3 space-x-3"
+            onClick={() => navigate("/")}
+          >
             <AiOutlineMail style={{ display: "inline-block" }} />{" "}
             <p>Send Mail</p>
           </button>
