@@ -27,8 +27,8 @@ const Navbar = () => {
         {/*Logo */}
         {/*Navlinks */}
         <div className="hidden lg:flex space-x-6 text-black text-lg  capitalize">
-          {navLinks.map((item) => (
-            <a className="navlinks" href={item.link} key={item.title}>
+          {navLinks.map((item, index) => (
+            <a className="navlinks" href={item.link} key={index}>
               {item.title}
             </a>
           ))}
