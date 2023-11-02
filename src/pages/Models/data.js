@@ -7,6 +7,7 @@ import six from "../../assets/model/6.png";
 
 export const carModels = [
   {
+    id: 1,
     image: one,
     model: "Audi A1",
     rent: "$45",
@@ -16,6 +17,7 @@ export const carModels = [
     fuel: "Diesel",
   },
   {
+    id: 2,
     image: two,
     model: "Golf 6",
     rent: "$37",
@@ -25,6 +27,7 @@ export const carModels = [
     fuel: "Diesel",
   },
   {
+    id: 3,
     image: three,
     model: "Livo",
     rent: "$30",
@@ -34,6 +37,7 @@ export const carModels = [
     fuel: "Diesel",
   },
   {
+    id: 4,
     image: four,
     model: "BMW 320",
     rent: "$35",
@@ -43,6 +47,7 @@ export const carModels = [
     fuel: "Diesel",
   },
   {
+    id: 5,
     image: five,
     model: "Mercedes",
     rent: "$50",
@@ -52,6 +57,7 @@ export const carModels = [
     fuel: "Diesel",
   },
   {
+    id: 6,
     image: six,
     model: "VW Passat",
     rent: "$25",

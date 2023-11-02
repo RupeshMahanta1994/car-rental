@@ -73,6 +73,7 @@ const Contact = () => {
             cols="30"
             rows="6"
             className="w-full border-none bg-gray-100 rounded-md p-3 mb-2"
+            value="Write Here..."
           >
             Write Here...
           </textarea>

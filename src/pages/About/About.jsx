@@ -7,7 +7,6 @@ import pageHeaderImage from "../../assets/pageHeader.png";
 import aboutImage from "../../assets/about/about.jpg";
 
 const About = () => {
-  console.log(typeList);
   return (
     <div>
       <PageHeader page="about" />
@@ -28,7 +27,7 @@ const About = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 place-items-center gap-5">
             {typeList.map((item) => (
-              <>
+              <div key={item.id}>
                 <div className="space-y-3 grid grid-cols-1 place-items-start">
                   <img src={item.icon} alt="" />
                   <div className="grid grid-cols-1 md:grid-cols-2 md:gap-2 place-items-center">
@@ -36,7 +35,7 @@ const About = () => {
                     <div className="capitalize">{item.type}</div>
                   </div>
                 </div>
-              </>
+              </div>
             ))}
           </div>
         </div>

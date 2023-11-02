@@ -21,8 +21,10 @@ const Booking = () => {
             <sup style={{ color: "#ff4d30" }}>*</sup>
           </label>
           <select name="" id="" className="w-full border-2 rounded-md p-2">
-            {carType.map((item) => (
-              <option value="">{item}</option>
+            {carType.map((item, index) => (
+              <option key={index} value="">
+                {item}
+              </option>
             ))}
           </select>
         </div>
@@ -35,8 +37,10 @@ const Booking = () => {
             <MdLocationOn /> pick-up <sup style={{ color: "#ff4d30" }}>*</sup>
           </label>
           <select name="" id="" className="w-full border-2 rounded-md p-2">
-            {locations.map((item) => (
-              <option value="">{item}</option>
+            {locations.map((item, index) => (
+              <option key={index} value="">
+                {item}
+              </option>
             ))}
           </select>
         </div>
@@ -49,8 +53,10 @@ const Booking = () => {
             <MdLocationOn /> drop-of <sup style={{ color: "#ff4d30" }}>*</sup>
           </label>
           <select name="" id="" className="w-full border-2 rounded-md p-2">
-            {locations.map((item) => (
-              <option value="">{item}</option>
+            {locations.map((item, index) => (
+              <option key={index} value="">
+                {item}
+              </option>
             ))}
           </select>
         </div>

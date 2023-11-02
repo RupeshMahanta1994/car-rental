@@ -6,7 +6,7 @@ import Button from ".././Button/Button";
 import "./Models.css";
 const Models = () => {
   const [modelNumber, setModelNumber] = useState(1);
-  console.log(modelNumber);
+
   return (
     <div>
       <div className=" text-center">
@@ -22,14 +22,14 @@ const Models = () => {
       <div className="grid grid-cols-1 gap-2  lg:grid-cols-5 place-items-center md:gap-1 justify-center">
         <div className="text-xl space-y-1">
           {modelNames.map((item, i) => (
-            <>
+            <div key={i}>
               <div
                 className="bg-gray-300/50 font-semibold px-5 py-3 rounded-sm cursor-pointer"
                 onClick={() => setModelNumber(i)}
               >
                 {item}
               </div>
-            </>
+            </div>
           ))}
         </div>
         <div className="col-span-3  flex items-center justify-center">
@@ -45,34 +45,38 @@ const Models = () => {
             {models[modelNumber].rent} / rent per day
           </div>
           <table className="w-full text-base text-center ">
-            <tr>
-              <td>Model</td>
-              <td className="capitalize">{models[modelNumber].model}</td>
-            </tr>
-            <tr>
-              <td>Mark</td>
-              <td className="capitalize">{models[modelNumber].mark}</td>
-            </tr>
-            <tr>
-              <td>Year</td>
-              <td>{models[modelNumber].year}</td>
-            </tr>
-            <tr>
-              <td>Doors</td>
-              <td>{models[modelNumber].doors}</td>
-            </tr>
-            <tr>
-              <td>AC</td>
-              <td className="capitalize">{models[modelNumber].ac}</td>
-            </tr>
-            <tr>
-              <td>Transmission</td>
-              <td className="capitalize">{models[modelNumber].transmission}</td>
-            </tr>
-            <tr>
-              <td>Fuel</td>
-              <td className="capitalize">{models[modelNumber].fuel}</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>Model</td>
+                <td className="capitalize">{models[modelNumber].model}</td>
+              </tr>
+              <tr>
+                <td>Mark</td>
+                <td className="capitalize">{models[modelNumber].mark}</td>
+              </tr>
+              <tr>
+                <td>Year</td>
+                <td>{models[modelNumber].year}</td>
+              </tr>
+              <tr>
+                <td>Doors</td>
+                <td>{models[modelNumber].doors}</td>
+              </tr>
+              <tr>
+                <td>AC</td>
+                <td className="capitalize">{models[modelNumber].ac}</td>
+              </tr>
+              <tr>
+                <td>Transmission</td>
+                <td className="capitalize">
+                  {models[modelNumber].transmission}
+                </td>
+              </tr>
+              <tr>
+                <td>Fuel</td>
+                <td className="capitalize">{models[modelNumber].fuel}</td>
+              </tr>
+            </tbody>
           </table>
           <Button title="RESERVE NOW" />
         </div>
