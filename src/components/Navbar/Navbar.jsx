@@ -33,7 +33,7 @@ const Navbar = () => {
             </a>
            */
             <>
-              <a href="/about" className="navlinks">
+              <a href="about" className="navlinks">
                 About
               </a>
               <a href="/contact" className="navlinks">
