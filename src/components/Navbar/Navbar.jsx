@@ -28,18 +28,9 @@ const Navbar = () => {
         {/*Navlinks */}
         <div className="hidden lg:flex space-x-6 text-black text-lg  capitalize">
           {navLinks.map((item, index) => (
-            /*  <a className="navlinks" href={item.link} key={index}>
+            <a className="navlinks" href={item.link} key={index}>
               {item.title}
             </a>
-           */
-            <>
-              <a href="about" className="navlinks">
-                About
-              </a>
-              <a href="/contact" className="navlinks">
-                Contact
-              </a>
-            </>
           ))}
         </div>
 
